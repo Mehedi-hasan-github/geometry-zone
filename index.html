@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry-Pro</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h2 class="title">Geometry-Pro</h2>
+    <div class="empty-error">
+      <h1>Empty input!</h1>
+      <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <main class="main-part">
+      <div class="main-contents">
+        <div class="cards-item">
+          <img src="images/triangle.png" alt="" />
+          <h2>Triangle</h2>
+          <div class="measurement"><span>Area = 0.5* Base *Height</span></div>
+          <div class="inputs">
+            <input id="triangleBase" type="text" placeholder="Base" /><span
+              >cm</span
+            >
+            <input id="triangleHeight" type="text" placeholder="Height" /><span
+              >cm</span
+            >
+          </div>
+          <button class="calculate-btn" onclick="calculateTriangle(this)">
+            Calculate
+          </button>
+        </div>
+        <div class="cards-item">
+          <img src="images/rectangle.png" alt="" />
+          <h2>Rectangle</h2>
+          <div class="measurement"><span>Area = Base *Height</span></div>
+          <div class="inputs">
+            <input id="rectangleBase" type="text" placeholder="Base" /><span
+              >cm
+            </span>
+            <input id="rectangleHeight" type="text" placeholder="Height" /><span
+              >cm</span
+            >
+          </div>
+          <button class="calculate-btn" onclick="calculateRectangle()">
+            Calculate
+          </button>
+        </div>
+        <div class="cards-item">
+          <img src="images/parallelogram.png" alt="" />
+          <h2>Parallelogram</h2>
+          <div class="measurement"><span>Area = Base * Height </span></div>
+          <div class="inputs">
+            <input id="parallelogramBase" type="text" placeholder="Base" /><span
+              >cm
+            </span>
+            <input
+              id="parallelogramHeight"
+              type="text"
+              placeholder="Height"
+            /><span>cm</span>
+          </div>
+          <button class="calculate-btn" onclick="calculateParallelogram()">
+            Calculate
+          </button>
+        </div>
+        <div class="cards-item">
+          <img src="images/ellipse.png" alt="" />
+          <h2>Ellipse</h2>
+          <div class="measurement">
+            <span>Area = 3.1416 * Width * Height</span>
+          </div>
+          <div class="inputs">
+            <input id="ellipseBase" type="text" placeholder="Base" /><span
+              >cm
+            </span>
+            <input id="ellipseHeight" type="text" placeholder="Height" /><span
+              >cm</span
+            >
+          </div>
+          <button class="calculate-btn" onclick="calculateEllipse()">
+            Calculate
+          </button>
+        </div>
+        <div class="cards-item">
+          <img src="images/pentagon.png" alt="" />
+          <h2>Pentagon</h2>
+          <div class="measurement">
+            <span>Area=(5*length**2)/(4* Math.tan(Math.PI/5))</span>
+          </div>
+          <div class="inputs">
+            <input id="pentagonHeight" type="text" placeholder="length" /><span
+              >cm</span
+            >
+          </div>
+          <button class="calculate-btn" onclick="calculatePentagon()">
+            Calculate
+          </button>
+        </div>
+        <div class="cards-item">
+          <img src="images/rhombus.png" alt="" />
+          <h2>Romgbus</h2>
+          <div class="measurement"><span>Area = Height * Base</span></div>
+          <div class="inputs">
+            <input id="rhombusBase" type="text" placeholder="Base" /><span
+              >cm</span
+            >
+            <input id="rhombusHeight" type="text" placeholder="Height" /><span
+              >cm</span
+            >
+          </div>
+          <button class="calculate-btn" onclick="calculateRhombus()">
+            Calculate
+          </button>
+        </div>
+      </div>
+
+      <div class="side-contents">
+        <h2 class="title">Calculations:</h2>
+        <div class="result-container"></div>
+      </div>
+    </main>
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

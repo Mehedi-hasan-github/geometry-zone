@@ -1,0 +1,120 @@
+body {
+  border: 0px;
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: crimson;
+}
+
+.main-part {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.main-contents {
+  width: 75%;
+  height: 100vh;
+}
+.side-contents {
+  background-color: #d4d3d4ef;
+  width: 25%;
+  height: 100vh;
+  overflow: auto;
+}
+.side-contents .title {
+  position: sticky;
+  top: 0px;
+  padding-bottom: 20px;
+  background-color: #d4d3d4ef;
+  z-index: 100;
+}
+.result-container {
+  list-style: none;
+  margin-left: 10px;
+}
+.main-contents {
+  overflow: hidden;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.cards-item img {
+  max-width: 250px;
+}
+.cards-item h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: teal;
+}
+.measurement {
+  margin-top: 10px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.inputs input {
+  width: 30%;
+  text-align: center;
+  outline: none;
+}
+.cards-item button {
+  border: none;
+  text-transform: uppercase;
+  color: #f0eeee;
+  background-color: #2222ec;
+  padding: 5px 18px;
+  font-size: medium;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+}
+.cards-item button:hover {
+  background-color: #1313e7;
+}
+/* ....Error handling.... */
+.empty-error {
+  position: fixed;
+  display: none;
+  height: 100px;
+  width: 380px;
+  background-color: #e22222;
+  color: yellow;
+  border-radius: 7px;
+  z-index: 1000;
+  margin-top: 18%;
+  margin-left: -15%;
+  /* display: none; */
+}
+
+.xmark {
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background-color: #e22222;
+  top: 5px;
+  right: 5px;
+}
